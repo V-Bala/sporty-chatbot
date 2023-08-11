@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="vb">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=OpenSans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
+    <title>Sporty AI</title>
+  </head>
+  <body>
+  <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+        // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
+        "botId": "2699ac34-7349-43a5-87a5-9655a4f695e5",
+        "clientId": "2699ac34-7349-43a5-87a5-9655a4f695e5",
+
+        // Set the URL for the Botpress WebChat JavaScript file and the messaging server
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+        "messagingUrl": "https://messaging.botpress.cloud",
+
+        // Set the name of the bot that will be displayed in the WebChat interface
+        "botName": "Sporty AI",
+        "botConversationDescription": "Your personal sports and life coach.",
+
+        // Set the width of the WebChat container and layout to 100% (Full Screen)
+        "containerWidth": "45%25",
+        "layoutWidth": "100%25",
+
+        // Hide the widget and disable animations
+        //"stylesheet": "https://webchat-styler-css.botpress.app/prod/b4598acd-db65-4b51-bcd3-6f81a664ee46/v24958/style.css",
+        "hideWidget": true,
+        "disableAnimations": true,
+        "showConversationsButton": true,
+        "enableTranscriptDownload": true,
+        "enableConversationDeletion": true,
+        "showCloseButton": true,
+        "useSessionStorage": false,
+        "showBotInfoPage": true
+    });
+
+    // Opens up the Chatbot by default
+    // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
+    window.botpressWebChat.onEvent(
+        function () {
+            window.botpressWebChat.sendEvent({ type: "show" });
+        },
+        ["LIFECYCLE.LOADED"]
+    );
+</script>
+
+<!--<section class="social-icons">
+  <a href="https://twitter.com/vijaybala_"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com/vijay_bala"> <i class="fab fa-instagram"></i> </a>
+  <a href="https://github.com/v-bala"> <i class="fab fa-github"></i> </a>
+  <a href="https://linkedin.com/in/vijaybala1"><i class="fab fa-linkedin-in"></i></a>
+</section>-->
+
+      <!-- Hero section -->
+      <p>Sporty AI</p>
+      <section class="hero">
+        <div class="intro-text">
+          <h1>
+            <!--<span class="hear fade-short"> Sporty AI </span> <br />-->
+            <span class="hear fade-short">golf</span> <br />
+            <span class="intro-mid fade-short">pickleball</span> <br />
+            <span class="hear fade-short">running</span> <br />
+            <span class="intro-mid fade-short">swimming</span> <br />
+          </h1>
+        </div>
+      </section>
+
+      <p class="typewriter">We are always researching the latest in athletics and fitness.
+        <br/>Need motivation? Help with training? Random information?
+        <br/>Meet with an expert or get answers now!
+      </p>
+      <a class="arrow">Say hello to Sporty AI. We'll take it from there.</a>
+
+      <!--<p class="typewriter">We are always researching the latest in athletics and fitness.
+        <br/>Leave your email below to subscribe to our FREE newsletter!
+      </p>
+      <form>
+        <input class="email-textfield" type="email" id="email" name="email" placeholder="Enter email address" required>
+        <button type="button" onclick="signUp()">Join</button>
+      </form>-->
+
+    <!--<footer>
+      <p>&copy; 2023. All rights reserved.</p>
+    </footer>-->
+  </body>
+</html>
